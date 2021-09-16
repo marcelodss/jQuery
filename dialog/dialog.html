@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<p>Click the button to show the dialog.</p>
+
+<button onclick="myFunction()">Show dialog</button>
+
+<p><b>Note:</b> Use the "Esc" button to close the modal.</p>
+<p><b>Note:</b> The dialog element is only supported in Chrome 37+, Safari 6+ and Opera 24+.</p>
+
+<dialog id="myDialog">This is a dialog window
+
+    <div class="modal-content">
+        <div class="modal-header">
+            <h1>Meu diálogo com HTML</h1>
+        </div>
+
+        <div class="modal-body">
+            <p>Mussum Ipsum, cacilds vidis litro abertis. In elementis mé pra quem é amistosis quis leo. 
+                Delegadis gente finis, bibendum egestas augue arcu ut est. 
+                Aenean aliquam molestie leo, vitae iaculis nisl. A ordem dos tratores não altera o pão duris.</p>
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS02XR40FeOWQQmbIjWK97F6WM0p3Awfue38Q&usqp=CAU" 
+                alt="Kyka, coisa linda.." style="width: 50%;">
+        </div>
+
+        <div class="modal-footer">
+            <button class="btn_modal" onclick="document.getElementById('myDialog').close();">Fechar</button>
+        </div>
+    </div>
+
+
+</dialog>
+
+<script>
+    function myFunction() { 
+        document.getElementById("myDialog").showModal(); 
+    } 
+</script>
+
+</body>
+</html>

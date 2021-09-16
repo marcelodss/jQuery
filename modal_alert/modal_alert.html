@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal HTML</title>
+    <link rel="stylesheet" href="style_modal_alert.css">
+</head>
+<body>
+
+    <div class="content">
+
+        <button onclick="openModal('dv-modal')">Abrir modal</button>
+
+        <p>Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. Quem num gosta di mim 
+            que vai caçá sua turmis! Diuretics paradis num copo é motivis de denguis. Paisis, filhis, espiritis santis..</p>
+
+        <p>Interessantiss quisso pudia ce receita de bolis, 
+            mais bolis eu num gostis. Cevadis im ampola pa arma uma pindureta. Mais vale um bebadis 
+            conhecidiss, que um alcoolatra anonimis. Quem num gosta di mim que vai caçá sua turmis!</p>
+    </div>
+
+    
+    <div id="dv-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1>Meu modal com HTML</h1>
+            </div>
+
+            <div class="modal-body">
+                <p>Mussum Ipsum, cacilds vidis litro abertis. In elementis mé pra quem é amistosis quis leo. 
+                    Delegadis gente finis, bibendum egestas augue arcu ut est. 
+                    Aenean aliquam molestie leo, vitae iaculis nisl. A ordem dos tratores não altera o pão duris.</p>
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS02XR40FeOWQQmbIjWK97F6WM0p3Awfue38Q&usqp=CAU" 
+                    alt="Kyka, coisa linda.." style="width: 50%;">
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn_modal" onclick="closeModal('dv-modal')">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script_modal_alert.js"></script>
+    
+</body>
+</html>

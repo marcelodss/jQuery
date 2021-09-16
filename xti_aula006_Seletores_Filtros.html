@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/xti_JQ_aula006.css">
+    <link rel="stylesheet" href="css/xti_JQ_botao.css">
+    <link rel="stylesheet" href="css/xti_JQ_forms.css">
+    <link rel="stylesheet" href="css/xti_JQ_links.css">
+    <link rel="stylesheet" href="css/xti_JQ_table.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/aulas/xti_JQ_aula006.js"></script>
+    <title>jquery aula 0006</title>
+</head>
+<body>
+<h1> Seletores: Filtros</h1>
+
+<table id="filmes">
+    <thead>
+        <tr>
+            <th>Filme</th>
+            <td scope="col">Gênero</td>
+            <td scope="col">Duração</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Chigo Xavier</th>
+            <td>Drama</td>
+            <td>124</td>
+        </tr>
+
+        <tr>
+            <th scope="row">O Bem Amado</th>
+            <td>Comédia</td>
+            <td>132</td>
+        </tr>
+        <tr>
+            <th scope="row">O Auto da Compadecida</th>
+            <td>Comédia</td>
+            <td>105</td>
+        </tr>
+    
+        <tr>
+            <th scope="row">Carandiru</th>
+            <td>Crime</td>
+            <td>145</td>
+        </tr>
+
+        <tr>
+            <th scope="row">Central do Brasil</th>
+            <td>Drama</td>
+            <td>113</td>
+        </tr>
+
+        <tr>
+            <th scope="row">Cidade de Deus</th>
+            <td>Crime</td>
+            <td>130</td>
+        </tr>
+
+        <tr>
+            <th scope="row">Deus é Brasileiro</th>
+            <td>Comédia</td>
+            <td>110</td>
+        </tr>
+
+        <tr>
+            <th scope="row">Dona Flor e seus Dois Maridos</th>
+            <td>Comédia</td>
+            <td>120</td>
+        </tr>
+
+        <tr>
+            <th scope="row">Lula, O Filho do Brasil</th>
+            <td>Biográfico</td>
+            <td>128</td>
+        </tr>
+
+        <tr>
+            <th scope="row">Tropa de Elite</th>
+            <td>Ação</td>
+            <td>118</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<a href="#" name="menu">Menu</a>
+<a href="https://jquery.com/">Site Jquery</a>
+<a href="js/aulas/xti_JQ_aula006.js">jq da aula 6</a>
+<a href="mailto:curriculo@mail.com.br" name="contato">mail para currículos</a>
+
+<h1> Seletores: Formulários</h1>
+
+<fieldset>
+    <legend>Formulário:</legend>
+        <form action="" method="post">
+        <label for="ftext">Text:</label>
+        <input type="text" id="itext" name="itext" value="Internauta">
+        <br>
+        <legend>Radio</legend>
+        <input type="radio" id="male" name="iradio" value="m" checked>
+        <label for="male">masculino</label>
+        <input type="radio" id="female" name="iradio" value="f">
+        <label for="female">feminino</label>
+        <br>
+        <label for="fpwd">Password:</label>
+        <input type="password" id="ipassword" name="ipassword">
+        <br>
+        <legend>Checkboxes</legend>
+        <input type="checkbox" id="icheckbox1" name="icheckbox1" value="html">
+        <label for="checkbox1"> HTML</label>
+        <input type="checkbox" id="icheckbox2" name="icheckbox" value="css">
+        <label for="checkbox2"> CSS</label>
+        <input type="checkbox" id="icheckbox3" name="icheckbox3" value="jquery" disabled="disabled" checked>
+        <label for="checkbox3"> JQuery</label>
+        <br>
+        <label for="iselect">Select:</label>
+        <select id="iselect" name="iselect">
+            <option value="Br">Brasil</option>
+            <option value="Al" disabled="disabled">Alemanha</option>
+            <option value="Su">Suécia</option>
+            <option value="NZ" disabled="disabled">Nova Zelândia</option>
+            <option value="FR">França</option>
+        </select>
+        <br>
+        <label for="ifile">Input File:</label>
+        <input type="file" name="ifile" id="ifile">
+        <br>
+
+
+        <label for="itextarea">Text Área:</label>
+        <textarea name="itextarea" id="itextarea" rows="10" cols="30" placeholder="Escreva aqui..."></textarea>
+        <br>
+        <input class="button button-green button2" type="submit" name="isubmit" id="isubmit" value="Submit">
+        <input class="button button-red button2" type="reset" name="ireset" id="ireset" value="Reset">
+        <input class="button button-blue button2" type="button" name="ibutton" id="ibutton" value="Button">
+    </form>
+</fieldset>
+
+
+</body>
+</html>

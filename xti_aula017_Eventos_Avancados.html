@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/xti_JQ_botao.css">
+    <link rel="stylesheet" href="css/xti_JQ_forms.css">
+
+    <style>
+        div {
+            font: 40px verdana;
+            padding:2%;
+            border: 5px dashed;
+            opacity: 0.3;
+        }
+    </style>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/aulas/xti_JQ_aula017.js"></script>
+    <title>jquery aula 0017</title> 
+</head> 
+<body>
+    <h1>Eventos Avançados</h1>
+    <p><code>bind()</code>; <code>unbind()</code>; <code>delegate()</code>; <code>trigger()</code></p>
+    
+    <div id="msg">mensagem</div>
+
+<fieldset>
+    <legend>Formulário:</legend>
+        <form action="" method="post">
+        <label for="ftext">Text:</label>
+        <input type="text" id="itext" name="itext" placeholder="Escreva aqui.">
+        <br>
+        <label for="iselect">Select:</label>
+        <select id="iselect" name="iselect">
+        <option value="Br">Brasil</option>
+        <option value="Al" disabled="disabled">Alemanha</option>
+        <option value="Su">Suécia</option>
+        <option value="NZ" disabled="disabled">Nova Zelândia</option>
+        <option value="FR">França</option>
+        </select>
+        <br>
+        <label for="itextarea">Text Área:</label>
+        <textarea name="itextarea" id="itextarea" rows="10" cols="30" placeholder="Escreva algo e depois selecione o texto digitado ou parte dele."></textarea>
+        <br>
+        <label for="favcolor">Select your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor">
+        <br>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+        <br>
+        <input class="button button-red button2" type="button" name="ibutton" id="ibutton" value="unbind">
+        <input class="button button-green button2" type="submit" name="isubmit" id="isubmit" value="Submit">
+    </form>
+</fieldset>
+</body>
+</html>
